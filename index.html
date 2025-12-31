@@ -185,7 +185,7 @@ function stageNext() {
         currentText = script[index++];
         const key = (currentText === "2026" || currentText === "新年快乐");
 
-        createText(currentText, 300, key ? "gold" : "white", key);
+        createText(currentText, 200, key ? "gold" : "white", key);
 
         const boom = ["5","4","3","2","1"].includes(currentText) ? 10 : 4;
         const types = allowedTypesByText(currentText);
@@ -206,7 +206,7 @@ function stageNext() {
 
         createText(
             "王意爸爸在此祝愿吾儿范先进元旦快乐",
-            80,
+            50,
             "white",
             false
         );
@@ -257,3 +257,4 @@ window.onresize=()=>{canvas.width=innerWidth;canvas.height=innerHeight};
 
 </body>
 </html>
+
